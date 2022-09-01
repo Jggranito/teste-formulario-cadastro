@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Formulário de login</h2>
+    <hr>
+    <div class="fundoCadastro">
+        <form method="post" action="index.html">
+            <h2>Cadastre-se</h2>
+            <p>É rápido e fácil</p>
+            <hr>
+            <input type="text" name="nome" id="nome" placeholder="Nome" class="InputFormulario" required>
+
+            <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" class="InputFormulario"
+                required><br>
+
+            <input type="text" name="email" id="celular-ou-email" placeholder="Celular ou email" class="InputFormulario senha-e-email"
+                required><br>
+
+            <input type="password" name="senha" id="senha" placeholder="Nova senha" class="InputFormulario senha-e-email"
+                required><br>
+
+            <p>Data de nascimento</p>
+            <select name="dia" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5" selected>5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+
+            <select name="mes" required>
+                <option value="janeiro">janeiro</option>
+                <option value="fevereiro">fevereiro</option>
+                <option value="março">março</option>
+                <option value="abril">abril</option>
+                <option value="maio" selected>maio</option>
+                <option value="junho">junho</option>
+                <option value="julho">junho</option>
+                <option value="agosto">agosto</option>
+                <option value="setembro">setembro</option>
+                <option value="outubro">outubro</option>
+                <option value="novembro">novembro</option>
+                <option value="desembro">desembro</option>
+            </select>
+
+            <select name="ano" required>
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+                <option value="2003">2003</option>
+                <option value="2004" selected>2004</option>
+                <option value="2005">2005</option>
+                <option value="2006">2006</option>
+                <option value="2007">2007</option>
+                <option value="2008">2008</option>
+                <option value="2009">2009</option>
+                <option value="2010">2010</option>
+            </select><br>
+
+            <p>Gênero</p>
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="genero" id="masculino" value="masculino" required>
+            <label for="feminino">Feminino</label>
+            <input type="radio" name="genero" id="feminino" value="feminino" required>
+            <label for="personalizado">Personalizado</label>
+            <input type="radio" name="genero" id="personalizado" value="personalizado" required> <br>
+
+            <input type="submit" value="Cadastre-se" class="botaoCadastrar">
+        </form>
+    </div>
+</body>
+
+</html>
